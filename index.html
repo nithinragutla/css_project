@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+        .n1 {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(./1st-section.jpg);
+            background-size: cover;
+        }
+        .n1>h1 {
+            width: 100px;
+            font-size: 150px;
+            position: relative;
+            top: 30%;
+            left: 35%;
+            color: azure;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .n1>p {
+            color: rgb(255, 98, 0);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 45px;
+            width: 100px;
+            position: relative;
+            top: 21%;
+            left: 37%;
+        }
+        .n2>p {
+            color: white;
+            width: 300px;
+            position: relative;
+            top: 75px;
+            left: 760px;
+            font-size: 45px;
+        }
+        button{
+            border: 0;
+            border-radius: 3px;
+            padding: 15px 25px 15px 25px;
+            background-color: rgb(255, 98, 0);
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .r{
+           width: 200px;
+            position: relative;
+            top: 10%;
+            left: 48%;
+            font-size: 45px;
+        }
+        .r1 {
+            border: 2PX solid white;
+            border-radius: 20px;
+            background-color: aliceblue;
+            padding: 5px 25px 5px 25px;
+            position: relative;
+            width: 100px;
+            top: -15%;
+            left: 90%;
+            font-size: 15px;
+        }
+        .r2 {
+            border: 2PX solid white;
+            border-radius: 20px;
+            text-align: center;
+            padding: 5px 15px 5px 15px;
+            background-color: aliceblue;
+            position: relative;
+            width: 100px;
+            top: -13%;
+            left: 90%;
+            font-size: 15px;
+        }
+        .r3 {
+            border: 2PX solid white;
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            background-color: aliceblue;
+            position: relative;
+            width: 100px;
+            top: -11%;
+            left: 90%;
+            font-size: 15px;
+        }
+        .r4 {
+            border: 2PX solid white;
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            background-color: aliceblue;
+            position: relative;
+            width: 100px;
+            top: -9%;
+            left: 90%;
+            font-size: 15px;
+        }
+        .r5 {
+            border: 2PX solid white;
+            border-radius: 20px;
+            padding: 5px 95px 5px 10px;
+            background-color: aliceblue;
+            position: relative;
+            width: 100px;
+            top: -8%;
+            left: 90%;
+            font-size: 15px;
+        }
+        .n3 {
+            width: 100vw;
+            height: 100vh;
+            padding-top: 100px;
+            padding-right: 150px;
+            padding-bottom: 200px;
+            background-image: url(./2nd-section.jpg);
+            background-size: cover;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .kk1 {
+            width: 20vw;
+            height: 470px;
+            position: relative;
+            color: aliceblue;
+            background-color: transparent;
+            left: 280px;
+
+        }
+        .kk1>b {
+            font-size: 25px;
+            font-family: Arial, sans-serif;
+        }
+        .kk1>p {
+            font-family: Arial, sans-serif;
+
+        }
+        .w1 {
+            margin: 80px 0px 0px 0px;
+            font-family: Arial, sans-serif;
+        }
+        .w2 {
+            margin-top: 60px;
+        }
+        .kk1>button {
+            background-color: rgb(255, 98, 0);
+            border-radius: 3px;
+            border: 0px;
+        }
+        .n3>.a1{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            text-align: center;
+            color: white;
+            
+        }
+        .kk2{
+            padding-top: 20px;
+        }
+        b {
+
+            font-size: 25px;
+            font-family: Arial, sans-serif;
+        }
+        p {
+            margin-top: 30px;
+            font-family: Arial, sans-serif;
+        }
+        .n4 {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(./3rd-section.jpg);
+            background-size: cover;
+        }
+        .container {
+            display: grid;
+            gap: 20px;
+            padding: 170px 250px 10px 200px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .box {
+            text-align: center;
+            background-color: white;
+        }
+        .f1>h4 {
+            font-family: Arial, sans-serif;
+        }
+        .f1>p {
+            font-size: 14px;
+            text-align: center;
+            color: rgb(255, 98, 0);
+        }
+        .box>img {
+            width: 100%;
+        }
+        .k1 {
+            display: grid;
+            display: inline-block;
+            grid-template-columns: repeat(3, 1fr);
+            height: 10px;
+            width: 10px;
+            background-color: white;
+            border-radius: 100%;
+            margin-top: 40px;
+            margin-left: 750px;
+        }
+        .k2 {
+            display: grid;
+            display: inline-block;
+            grid-template-columns: repeat(3, 1fr);
+            height: 10px;
+            width: 10px;
+            background-color: rgba(255, 255, 255, 0.59);
+            border-radius: 100%;
+        }
+        .k3 {
+            display: grid;
+            display: inline-block;
+            grid-template-columns: repeat(3, 1fr);
+            height: 10px;
+            width: 10px;
+            background-color: rgba(255, 255, 255, 0.59);
+            border-radius: 100%;
+        }
+        .k4 {
+            border: 2PX solid white;
+            border-radius: 20px;
+            padding: 5px 25px 5px 25px;
+            background-color: aliceblue;
+            width: 100px;
+            position: relative;
+            left: 90%;
+            top: -350px;
+        }
+        .k5 {
+            border: 2PX solid white;
+            border-radius: 20px;
+            padding: 5px 15px 5px 15px;
+            background-color: aliceblue;
+            width: 100px;
+            position: relative;
+            left: 90%;
+            top: -340px;
+        }
+        .k6 {
+            border: 2PX solid white;
+            border-radius: 20px;
+            padding: 5px 3px 5px 3px;
+            background-color: aliceblue;
+            width: 100px;
+            position: relative;
+            left: 90%;
+            top: -330px;
+        }
+        .k7 {
+            border: 2PX solid white;
+            border-radius: 20px;
+            padding: 5px 3px 5px 3px;
+            background-color: aliceblue;
+            width: 100px;
+            position: relative;
+            left: 90%;
+            top: -320px;
+        }
+        .k8 {
+            border: 2PX solid white;
+            border-radius: 20px;
+            padding: 5px 3px 5px 3px;
+            background-color: aliceblue;
+            width: 100px;
+            position: relative;
+            left: 90%;
+            top: -310px;
+        }
+        .n5 {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(./4th-section.jpg);
+            background-size: cover;
+        }
+        .container1 {
+            position: relative;
+            top: 90px;
+            left: 400px;
+            width: 900px;
+            height: 480px;
+            background-color: rgba(0, 0, 0, 0.715);
+        }
+        .box2>p {
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+
+        }
+        .daa {
+            display: grid;
+            grid-template-columns: repeat(4, 150px);
+            grid-gap: 0px 30px;
+            margin-top: 120px;
+            margin-left: 500px;
+        }
+        .daa>div {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .s2 {
+            width: 550px;
+            display: grid;
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.459);
+            ;
+            padding: 20px;
+            position: relative;
+            top: 100px;
+            left: 200px;
+        }
+        input {
+            height: 60px;
+            width: 500px;
+        }
+        textarea {
+            width: 500px;
+        }
+        .s2>button {
+            padding: 15px;
+            width: 500px;
+            background-color: rgb(255, 98, 0);
+            border: 0;
+            border-radius: 2px;
+        }
+        .n6 {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(./5th-section.jpg);
+            background-size: cover;
+        }
+        .s3 {
+            width: 540px;
+            display: grid;
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.459);
+            ;
+            padding: 20px;
+            position: relative;
+            top: 120px;
+            left: 300px;
+        }
+        .n1>.m2{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            row-gap: 35px;
+            position: relative;
+            width: 10px;
+            top:-36%;
+            left: 98.5%;
+        }
+        .n1>.m2>.d2{
+            height: 7px;
+            width: 7px;
+            background-color: rgba(255, 255, 255, 0.764);
+            border-radius: 100%;
+        }
+        .n1>.m2>.d3{
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            border-radius: 100%;
+            position: relative;
+            left: -20%;
+        }
+        .n3>.m3{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            row-gap: 35px;
+            position: relative;
+            width: 10px;
+            top: -150%;
+            left: 215%;
+        }
+        .n3>.m3>.d12{
+            height: 7px;
+            width: 7px;
+            background-color: rgba(255, 255, 255, 0.764);
+            border-radius: 100%;
+        }
+        .n3>.m3>.d13{
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            border-radius: 100%;
+            position: relative;
+            left: -20%;
+        }
+        .n4>.m4{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            row-gap: 35px;
+            position: relative;
+            width: 10px;
+            top: -69.5%;
+            left: 98.5%;
+        }
+        .n4>.m4>.d2{
+            height: 7px;
+            width: 7px;
+            background-color: rgba(255, 255, 255, 0.764);
+            border-radius: 100%;
+        }
+        .n4>.m4>.d3{
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            border-radius: 100%;
+            position: relative;
+            left: -20%;
+        }
+        .n5>.m5{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            row-gap: 35px;
+            position: relative;
+            width: 10px;
+            top: -55%;
+            left: 98%;
+        }
+        .n5>.m5>.d2{
+            height: 7px;
+            width: 7px;
+            background-color: rgba(255, 255, 255, 0.764);
+            border-radius: 100%;
+        }
+        .n5>.m5>.d3{
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            border-radius: 100%;
+            position: relative;
+            left: -20%;
+        }
+        .n6>.m6{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            row-gap: 35px;
+            position: relative;
+            width: 10px;
+            top: -45%;
+            left: 98%;
+        }
+        .n6>.m6>.d2{
+            height: 7px;
+            width: 7px;
+            background-color: rgba(255, 255, 255, 0.764);
+            border-radius: 100%;
+        }
+        .n6>.m6>.d3{
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            border-radius: 100%;
+            position: relative;
+            left: -20%;
+        }
+        .n7 {
+            height: 25vh;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.703);
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .fa {
+            padding: 15px;
+            font-size: 15px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="n1">
+        <h1>VANILLA</h1>
+        <p>Bootstrap</p>
+        <div class="n2">
+            <P>v4.2.1 Theme</P>
+        </div>
+        <div class="r"><button>DISCOVER MORE</button></div>
+        <div class="r1" style="color: black;">
+            INTRO
+        </div>
+        <div class="r2" style="color: rgba(0, 0, 0, 0.459);">
+            SERVICE
+        </div>
+        <div class="r3" style="color:  rgba(0, 0, 0, 0.459);">
+            PROTFOLIO
+        </div>
+        <div class="r4" style="color:   rgba(0, 0, 0, 0.459);">
+            OURSTORY
+        </div>
+        <div class="r5" style="color:  rgba(0, 0, 0, 0.459);">
+            CONTACTUS
+        </div>
+        <div class="m2">
+            <div class="d3"></div>
+            <div class="d2"></div>
+            <div class="d2"></div>
+            <div class="d2"></div>
+            <div class="d2"></div>
+        </div>    
+    </div>
+    <div class="n3">
+        <div class="kk1"><b>More About Vanilla</b>
+            <pre style="color: orange;">_____</pre>
+            <p>vanilla is free HTML CSS template with Bootstrap v4.2.1 and you can
+                apply this theme for you sites.please share our website to your friends or colleges.thankyou.</p>
+            <div class="w1">-praesent porta urna id errors
+                <pre></pre>
+                -curabitur consectur malesuada
+                <pre></pre>
+                -Nam pretium imperdiet enim
+                <pre></pre>
+                -Sed viverra arcu non nisi efficitur
+            </div>
+            <div class="w2"><button>LEARN MORE ABOUT US</button></div>
+        </div>
+        <section class="a1">
+            <div class="kk2" style="background-color: rgba(0, 0, 0, 0.493);"><h1>Classic Modern Design</h1>
+                <pre style="color: orange;">_____</pre><br>
+                <p>sed laciniia ligula est,at venenatis ex <br> iaculis quis.morbi sollicitudin nulla eget <br>odio pellent
+                    esesque</p>
+            </div>
+            <div class="kk2" style="background-color: rgba(0, 0, 0, 0.493);"><h1>Fast Support 24/7</h1>
+                <pre style="color: orange;">_____</pre><br>
+                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Sed lacinia ligula est,at <br> venenatus iaculis
+                    quis.</p>
+            </div>
+        
+            <div class="kk2" style="background-color: rgba(0, 0, 0, 0.493);"><h1>Effective Team Work </h1>
+                <pre style="color: orange;">_____</pre><br>
+                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Sed lacinia ligula est,at <br> venenatus iaculis
+                    quis.</p>
+            </div>
+            <div class="kk2" style="background-color: rgba(0, 0, 0, 0.493);"><h1>Unique & Creative Ideas</h1>
+                <pre style="color: orange;">_____</pre><br>
+                <p>sed laciniia ligula est,at venenatis ex <br> iaculis quis.morbi sollicitudin nulla eget <br>odio pellent
+                    esesque</p>
+            </div>
+        </section>
+        <div class="m3">
+            <div class="d12"></div>
+            <div class="d13"></div>
+            <div class="d12"></div>
+            <div class="d12"></div>
+            <div class="d12"></div>
+        </div>
+    </div>
+    <div class="n4">
+        <div class="container">
+            <div class="box">
+                <img src="./1st-big-item.jpg">
+                <div class="f1"><br>
+                    <h4>Awesome Note Book</h4>
+                    <p style="margin-bottom: 30px;">$18.00</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./2nd-item.jpg">
+                <div class="f1"><br>
+                    <h4>Antique Decoration Photo</h4>
+                    <p style="margin-bottom: 30px;">$27.00</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./3rd-item.jpg">
+                <div class="f1"><br>
+                    <h4>Work Hand Bag</h4>
+                    <p style="margin-bottom: 30px;">$36.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="f2">
+            <div class="k1"></div>&nbsp;&nbsp;
+            <div class="k2"></div>&nbsp;&nbsp;
+            <div class="k3"></div>&nbsp;&nbsp;
+        </div>
+        <div>
+            <div class="k4" style="color:  rgba(0, 0, 0, 0.459);">
+                INTRO
+            </div>
+            <div class="k5" style="color: rgba(0, 0, 0, 0.459);">
+                SERVICE
+            </div>
+            <div class="k6" style="color:  black">
+                PROTFOLIO
+            </div>
+            <div class="k7" style="color:   rgba(0, 0, 0, 0.459);">
+                OURSTORY
+            </div>
+            <div class="k8" style="color:  rgba(0, 0, 0, 0.459);">
+                CONTACTUS
+            </div>
+        </div>
+        <div class="m4">
+            <div class="d2"></div>
+            <div class="d2"></div>
+            <div class="d3"></div>
+            <div class="d2"></div>
+            <div class="d2"></div>
+        </div>
+    </div>
+    <div class="n5">
+        <div class="container1">
+            <div class="box2">
+                <img src="./1st-tab.jpg" width="900px">
+                <p>please do not re-distribute our template ZIP file on your
+                    template collection sites,you can make a <br>screenshot and a link back to our website.
+                    This template can be used for personal or commercial <br>purpose by end-users</p>
+            </div>
+        </div>
+        <div class="daa">
+            <div style="border: 5px solid  rgb(255, 98, 0);">2008-2014</div>
+            <div style="border: 5px solid white;">2014-2016</div>
+            <div style="border: 5px solid white;">2016-2019</div>
+            <div style="border: 5px solid white;">2019-NOW</div>
+        </div>
+        <div class="m5">
+            <div class="d2"></div>
+            <div class="d2"></div>
+            <div class="d2"></div>
+            <div class="d3"></div>
+            <div class="d2"></div>
+        </div>
+    </div>
+    <div class="n6">
+        <div class="s2">
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br><br>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br><br>
+            <textarea id="w3review" name="w3review" rows="15" cols="50" placeholder="Your message.."></textarea><br><br>
+            <button>send message</button>
+        </div>
+        <div class="s3">
+            <img src="./Screenshot 2024-07-18 005257.png" width="500px" height="500px">
+        </div>
+        <div class="m6">
+            <div class="d2"></div>
+            <div class="d2"></div>
+            <div class="d2"></div>
+            <div class="d2"></div>
+            <div class="d3"></div>
+        </div>
+    </div>
+    <div class="n7">
+        <button
+            style="border-radius: 2px;padding: 10px 15px 10px 15px; border: 0; background-color:  rgb(255, 98, 0); color: white; margin-top: 20px;">
+            BACK TO TOP</button><br><br>
+            <a href="#" class="fa fa-facebook" style="height: 40px;width: 40px;border-radius: 100%;background: rgb(255, 98, 0);color: rgba(0, 0, 0, 0.703);"></a>
+            <a href="#" class="fa fa-twitter" style="height: 40px;width: 40px;border-radius: 100%;background: rgb(255, 98, 0);color: rgba(0, 0, 0, 0.703);"></a>
+            <a href="#" class="fa fa-google" style=" height: 40px;width: 40px;border-radius: 100%;background: rgb(255, 98, 0);color: rgba(0, 0, 0, 0.703);"></a>
+            <a href="#" class="fa fa-linkedin" style="height: 40px;width: 40px;border-radius: 100%;background: rgb(255, 98, 0);color: rgba(0, 0, 0, 0.703);"></a>
+            <a href="#" class="fa fa-dribbble" style="height: 40px;width: 40px;border-radius: 100%;background: rgb(255, 98, 0);color: rgba(0, 0, 0, 0.703);"></a>
+        <p style="margin-top: 20px;">copywright &copy; 2019 company Name-design:<bstyle="color: rgb(255, 98, 0);>TemplateMo</b></p>
+   </div>
+</div>
+</body>
+</html>
